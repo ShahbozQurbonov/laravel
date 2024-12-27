@@ -7,9 +7,6 @@ use Illuminate\Http\Request;
 
 class CrudController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
     public function index()
     {
         return response()->json(Crud::all());
