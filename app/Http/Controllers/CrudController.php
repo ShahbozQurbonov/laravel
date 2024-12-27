@@ -30,6 +30,9 @@ class CrudController extends Controller
     public function show(string $id)
     {
         $crud=Crud::find($id);
+        if(!$crud){
+            return response()->json("nodurust");
+        }
         return response()->json($crud);
     }
 
@@ -56,6 +59,9 @@ class CrudController extends Controller
     public function destroy(string $id)
     {
         $crud=Crud::find($id);
+        if(!$crud){
+            return response()->json("nodurust");
+        }
         $crud->delete();
         return response()->json("OK");
     }
