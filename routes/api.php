@@ -1,7 +1,7 @@
 <?php
 
+use App\Http\Controllers\CrudController;
 use App\Http\Controllers\ShController;
-use App\Http\Controllers\TellController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::apiResource('tell',TellController::class);
+Route::apiResource('crud',CrudController::class);
 
 
 
