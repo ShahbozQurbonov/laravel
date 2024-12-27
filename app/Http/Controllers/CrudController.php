@@ -53,9 +53,6 @@ class CrudController extends Controller
         return response()->json($crud);
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
     public function destroy(string $id)
     {
         $crud=Crud::find($id);
